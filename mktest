@@ -1,0 +1,19 @@
+#!/bin/bash
+#
+# Compile and test
+#
+echo "[Starting test]"
+mysql.server status > /dev/null
+RES=$?
+if [ $RES -ne 0 ]; then
+	mysql.server start
+	RES=$?
+fi
+if [ $RES -ne 0 ]; then
+	echo "Unable to start MySQL; terminating"
+	exit 1
+fi
+
+javac AppConfig.java && java -cp "/usr/local/Cellar/mysql-connector-java/5.1.32/libexec/mysql-connector-java-5.1.32-bin.jar:." AppConfig
+
+echo "[Done]"
