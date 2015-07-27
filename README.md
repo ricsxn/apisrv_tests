@@ -1,8 +1,8 @@
 # apisrv_tests
 
 ApiServer class actually demonstrates how use an SQL baseline setup to generate a valid json based schema in Java.
-The baseline.sql file is meant for a mysql database
-In order to execute the example, just execute: mktest
+The baseline.sql file is meant for a mysql database.
+In order to execute the example, just execute: mktest (this script is meant for a macosx environment; but its content can be easily changed for other working environments).
 
 The current baseline is confiuged for the CSGF real cases of rOCCI infrastructures and EMIGrid; below generated outputs:
 
