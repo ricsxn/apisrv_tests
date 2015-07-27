@@ -1,0 +1,111 @@
+# apisrv_tests
+
+ApiServer class actually demonstrates how use SQL baseline settings to generate a valid json based schema via a Java code.
+The baseline.sql file requires a mysql database
+In order to execute a test just executing: mktest
+
+The current baseline is confiuged for the CSGF real cases of rOCCI infrastructures and EMIGrid ; below generated outputs:
+
+```
+{  
+   "rOCCI-infrastructure":[  
+      {  
+         "infrastructure":[  
+            {  
+               "genericInfo":{  
+                  "Name":"",
+                  "Description":"",
+                  "Enabled":""
+               }
+            },
+            {  
+               "robotSecuriry":{  
+                  "eTokenHost":"",
+                  "eTokenPort":"",
+                  "eTokenMd5Sum":"",
+                  "eTokenVO":"",
+                  "eTokenVOGroup":"",
+                  "eTokenProxyRenewal":"",
+                  "ProxyRFC":""
+               }
+            },
+            {  
+               "JSAGA":{  
+                  "Executable":"",
+                  "Arguments":"",
+                  "InputSandbox":"",
+                  "OutputSandbox":"",
+                  "OutputFile":"",
+                  "ErrorFile":""
+               }
+            },
+            {  
+               "resourceList":[  
+                  {  
+                     "resource":[  
+                        {  
+                           "hostname":"",
+                           "port":"",
+                           "resource":"",
+                           "action":"",
+                           "attributes_title":"",
+                           "mixin_os_tpl":"",
+                           "mixin_resource_tpl":"",
+                           "auth":"",
+                           "publickey_file":"",
+                           "privatekey_file":""
+                        }
+                     ]
+                  }
+               ]
+            }
+         ]
+      }
+   ]
+}
+```
+
+```
+{  
+   "EMIGrid-infrastructure":[  
+      {  
+         "infrastructure":[  
+            {  
+               "genericInfo":{  
+                  "Name":"",
+                  "Description":"",
+                  "Enabled":""
+               }
+            },
+            {  
+               "robotSecuriry":{  
+                  "eTokenHost":"",
+                  "eTokenPort":"",
+                  "eTokenMd5Sum":"",
+                  "eTokenVO":"",
+                  "eTokenVOGroup":"",
+                  "eTokenProxyRenewal":"",
+                  "ProxyRFC":""
+               }
+            },
+            {  
+               "JSAGA":{  
+                  "Executable":"",
+                  "Arguments":"",
+                  "InputSandbox":"",
+                  "OutputSandbox":"",
+                  "OutputFile":"",
+                  "ErrorFile":""
+               }
+            },
+            {  
+               "EMIGrid":{  
+                  "softwareTag":"",
+                  "jdlRequirements":""
+               }
+            }
+         ]
+      }
+   ]
+}
+```
